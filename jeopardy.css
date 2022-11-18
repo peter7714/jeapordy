@@ -1,0 +1,98 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+body {
+  font-family: copse;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* centers loading symbol */
+
+.dim {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* dims body */
+
+.loader {
+  position: relative;
+  margin-top: 100px;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  z-index: 1;
+}
+
+/* loading symbol */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* loading animation */
+
+#btn-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* centers btn */
+
+.btn {
+  font-size: 1.5em;
+  padding: 12px;
+}
+
+#game {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* centers game */
+
+.deployed {
+  table-layout: fixed;
+  width: 95%;
+  height: 60%;
+}
+
+/* loaded table */
+
+td, th {
+  background-color: #060ce9;
+  color: #f3f3f3;
+  /* border: 2px solid black; */
+}
+
+th {
+  text-transform: capitalize;
+  height: 70px;
+  font-size: .8em;
+}
+
+/* capitalizes Categories */
+
+td {
+  font-size: .8em;
+  text-align: center;
+  height: 100px;
+}
